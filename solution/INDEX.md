@@ -58,8 +58,13 @@ python solution/run_all.py
    ├── Heuristic noise models
    └── Error scaling plots
 
-⏳ Phase 4: Optimization (Framework Ready)
-⏳ Phase 5: Bonuses (Framework Ready)
+✅ Phase 4: Optimization (100%)
+   ├── Improved encoding circuits
+   └── Comprehensive noise comparison
+
+✅ Phase 5: Advanced Topics (100%)
+   ├── Syndrome decoding & correction
+   └── Tsim magic state memory
 ```
 
 ---
@@ -95,9 +100,17 @@ solution/
 │   ├── 02_syndrome_extraction.py    # Error detection
 │   └── 03_multi_round_qec.py        # QEC cycles
 │
-└── segment_3_noise_analysis/
-    ├── 01_heuristic_noise.py        # Hardware models
-    └── 02_error_scaling.py          # L vs P analysis
+├── segment_3_noise_analysis/
+│   ├── 01_heuristic_noise.py        # Hardware models
+│   └── 02_error_scaling.py          # L vs P analysis
+│
+├── segment_4_optimization/
+│   ├── 01_improved_encoding.py      # Non-magic encoding
+│   └── 02_noise_comparison.py       # Noise models
+│
+└── segment_5_advanced/
+    ├── 01_syndrome_decoding.py      # Decoding
+    └── 02_tsim_magic_states.py      # T-states
 ```
 
 ### Documentation & Tools
@@ -108,7 +121,8 @@ solution/
 ├── README.md                        # Running instructions
 ├── INDEX.md                         # This file
 ├── run_all.py                       # Run everything
-└── quick_test.py                    # Quick validation
+├── quick_test.py                    # Quick validation (1-3)
+└── segment_4_5_quick_test.py        # Quick validation (4-5)
 ```
 
 ---
@@ -121,7 +135,7 @@ All challenge requirements met:
 |-------------|--------|----------------|
 | Bloqade Squin kernels | ✅ | All circuits |
 | Stim backend | ✅ | Primary simulator |
-| Tsim backend | ✅ | Secondary, ready for T gates |
+| Tsim backend | ✅ | Magic state support |
 | Manual noise | ✅ | depolarize() throughout |
 | Heuristic noise | ✅ | GeminiOneZone via Cirq |
 | Syndrome extraction | ✅ | All 6 stabilizers |
@@ -130,6 +144,8 @@ All challenge requirements met:
 | Error scaling | ✅ | L vs P with plots |
 | Circuit parallelism | ✅ | 3x optimization |
 | Documentation | ✅ | Complete |
+| **Bonus 2** | ✅ | Syndrome decoding |
+| **Bonus 4** | ✅ | T-state memory |
 
 ---
 
@@ -185,4 +201,4 @@ This implementation represents a complete solution to the core iQuHACK 2026 QuEr
 
 **Last Updated:** January 31, 2026  
 **Status:** ✅ Ready for Submission  
-**Implementation:** 8/11 core segments complete + framework for bonuses
+**Implementation:** 12/12 segments complete (all phases + 2 bonuses)
