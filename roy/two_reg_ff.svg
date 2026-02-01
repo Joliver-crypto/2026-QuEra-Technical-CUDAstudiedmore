@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" style="background:white">
+<text x="10" y="25" font-family="sans-serif" font-size="14" font-weight="bold">Feedforward:</text>
+<text x="20" y="55" font-family="monospace" font-size="12">1. M (Z-basis) on reg2: q[7]..q[13]</text>
+<text x="20" y="85" font-family="monospace" font-size="12">2. X on q[i] if reg2[i] measured 1</text>
+<text x="20" y="115" font-family="monospace" font-size="12">3. M on reg1: q[0]..q[6]</text>
+</svg>
